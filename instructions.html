@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions de Jeu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('./assets/GOKUvsFRIEZA.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            text-align: center; /* Centrer le contenu textuellement */
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #ff9900d1;
+        }
+
+        .container p {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        .container ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left; /* Laisse les instructions alignées à gauche */
+            margin: 0 auto 20px;
+            width: fit-content;
+        }
+
+        .container ul li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .container ul li span {
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #a200ff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px; /* Ajoute un espace au-dessus du bouton */
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instructions du Jeu</h1>
+        <p>FRIEZA essaye de détruire la Terre !
+             Aide SANGOKU à tuer tous les friezas et à sauver la planète !! 
+            Utilises les commandes et saisis la victoire !! (Amusez-vous bien !)</p>
+        <ul>
+            <li><span>k</span> : Tirer des Kamehamehas !!</li>
+            <li><span>f</span> : Ajouter des ennemis Frieza </li>
+            <li><span>d</span> : Debug</li>
+            <li><span>o</span> : Ajouter des obstacles de météorites!</li>
+            <li><span>s</span> : Mode snake</li>
+            <li><span>m</span> : Ajouter des dragon ball</li>
+        </ul>
+        <a href="game.html" class="btn">PLAY</a>
+    </div>
+</body>
+</html>

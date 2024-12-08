@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DRAGON BALL : Goku vs Frieza</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="obstacle.js"></script>
+    <script src="sketch.js"></script>
+    <script src="bullet.js"></script>
+    <script src="personnages/Personnage.js"></script>
+    <script src="personnages/GOKU.js"></script>
+    <script src="personnages/Boules.js"></script>
+    <script src="personnages/FRIEZA.js"></script>
+    <style>
+      /* Styles pour les instructions en haut à droite */
+      .instructions-container {
+        position: fixed;
+        top: 20px;  /* Espace du haut */
+        right: 20px;  /* Espace de la droite */
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        width: 250px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        z-index: 1000; /* S'assurer que le conteneur est au-dessus des autres éléments */
+      }
+
+      .instructions-container h2 {
+        margin-top: 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .instructions-container ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .instructions-container ul li {
+        margin-bottom: 10px;
+      }
+
+      .instructions-container ul li span {
+        font-weight: bold;
+        color: #ff9900;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Instructions en haut à droite -->
+    <div class="instructions-container">
+      <h2>Instructions</h2>
+      <ul>
+        <li><span>k</span> : Tirer des Kamehamehas !!</li>
+            <li><span>f</span> : Ajouter des ennemis Frieza </li>
+            <li><span>d</span> : Debug</li>
+            <li><span>o</span> : Ajouter des obstacles de météorites!</li>
+            <li><span>s</span> : Mode snake</li>
+            <li><span>m</span> : Ajouter des dragon ball</li>
+      </ul>
+    </div>
+  </body>
+</html>
